@@ -27,7 +27,11 @@
             </tr>
             <tr>
                 <th scope="row">PRODUCTOR</th>
-                <td>VARCHAR(30) NOTNULL</td>
+                <td>VARCHAR(30) NOTNULL INDEX</td>
+            </tr>
+            <tr>
+                <th scope="row">PRICE</th>
+                <td>DECIMAL(10,2) NOTNULL </td>
             </tr>
             <tr>
                 <th scope="row">COLOR</th>
@@ -35,7 +39,7 @@
             </tr>
             <tr>
                 <th scope="row">KM</th>
-                <td>VARCHAR(50) NOTNULL</td>
+                <td>MEDIUMINT NOTNULL</td>
             </tr>
             <tr>
                 <th scope="row">PRODUCTION_YEAR</th>
@@ -43,7 +47,8 @@
             </tr>
             <tr>
                 <th scope="row">CC</th>
-                <td>SMALLINT NOTNULL</td>
+                <td>SMALLINT NULL</td> 
+                <!-- è meglio non appesantire le esigenze per l'utente che andrà a inserire il prodotto. -->
             </tr>
             <tr>
                 <th scope="row">DESCRIPTION</th>
